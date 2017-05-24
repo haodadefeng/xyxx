@@ -17,6 +17,10 @@ import api from './api'
 import Plugins from 'plugins'
 //导入主视图文件
 import App from './App'
+//到入echarts
+import echarts from 'echarts'
+import axios from 'axios'
+import * as port from 'common/config'
 
 //使用element-ui
 Vue.use(ElementUI)
@@ -26,6 +30,14 @@ Vue.use(Plugins)
 
 //使用api
 Vue.use(api)
+
+//绑定到Vue原型
+Vue.prototype.$echarts = echarts;
+Vue.prototype.$ajax = axios;
+
+axios.defaults.baseURL = '/educationtrain-web/';
+// Vue.prototype.$ajax.baseUrl = port.server_base_api_url
+
 
 //发布后是否显示提示
 Vue.config.productionTip = false

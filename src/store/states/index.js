@@ -11,7 +11,12 @@
 
 import {cookieStorage} from 'common/storage'
 
+let obj = {
+  name:'111'
+}
+
 export default {
   //用户信息和是否登录
-  user_info: cookieStorage.get('user_info')
+  user_info: cookieStorage.get('user_info'),
+  o:obj
 }

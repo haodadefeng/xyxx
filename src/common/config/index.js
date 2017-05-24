@@ -14,3 +14,5 @@ export const storage_prefix = 'zzm_admin_storage_'
 export const base64_prefix = 'zzm_admin_base64_'
 //接入服务器接口地址根目录
 export const server_base_url = '/'
+
+export const server_base_api_url = 'http://172.16.101.74:8080/educationtrain-web/'

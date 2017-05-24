@@ -76,3 +76,41 @@ html, body {
   flex: 1;
   display: block;
 }
+
+
+//自己定义的全局样式
+.el-select .el-input {
+  max-width: 500px;
+}
+
+.tableStyle{
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-body{
+  display:flex;
+  flex-direction:column;
+}
+.el-table__header-wrapper{
+  overflow: initial;
+}
+.el-table__body-wrapper{
+  flex-grow:1
+}
+.el-table{
+  display:flex;
+  flex-direction: column;
+}
+.el-table__body-wrapper{
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.search-input{
+  height: 45px;
+  line-height:65px;
+  padding:0 15px;
+}
+.searchBox{
+  max-width:500px;
+}

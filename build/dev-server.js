@@ -63,6 +63,15 @@ Object.keys(proxyTable).forEach(function (context) {
   }
   app.use(proxyMiddleware(options.filter || context, options))
 })
+// proxy api requests
+
+// app.all('/educationtrain-web/*', function(req, res) {
+//   console.log('222');
+//   proxy.web(req, res, {
+//       target: 'http://172.16.101.74:8080'
+//   });
+// });
+
 
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())

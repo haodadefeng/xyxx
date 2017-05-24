@@ -45,30 +45,32 @@
     name: 'slide',
     data(){
       return {
-        nav_menu_data: [{
-          title: "主页",
-          path: "/home",
-          icon: "fa-home"
-        }, {
-          title: "表格管理",
-          path: "/table",
-          icon: "fa-table",
-          child: [{
-            title: "基本表格",
-            path: "/table/base"
-          }, {
-            title: "排序表格",
-            path: "/table/sort"
-          }]
-        }, {
-          title: "图表管理",
-          path: "/charts",
-          icon: "fa-bar-chart-o",
-          child: [{
-            title: "柱状图表",
-            path: "/charts/bar"
-          }]
-        },{
+        nav_menu_data: [
+        //   {
+        //   title: "主页",
+        //   path: "/home",
+        //   icon: "fa-home"
+        // }, {
+        //   title: "表格管理",
+        //   path: "/table",
+        //   icon: "fa-table",
+        //   child: [{
+        //     title: "基本表格",
+        //     path: "/table/base"
+        //   }, {
+        //     title: "排序表格",
+        //     path: "/table/sort"
+        //   }]
+        // }, {
+        //   title: "图表管理",
+        //   path: "/charts",
+        //   icon: "fa-bar-chart-o",
+        //   child: [{
+        //     title: "柱状图表",
+        //     path: "/charts/bar"
+        //   }]
+        // },
+        {
           title: "基础信息",
           path: "/base",
           icon: "iconfont icon-jichuxinxi",
@@ -137,7 +139,7 @@
           path: "/ADmanagement",
           icon: "iconfont icon-guanggaoguanli"
         },{
-          title: "投诉评论",
+          title: "投诉/评论",
           path: "/complaint",
           icon: "iconfont icon-tousu1"
         }]

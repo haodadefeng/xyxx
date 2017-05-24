@@ -19,3 +19,5 @@ exports.del = "/api/post/table/del"
 exports.save = "/api/post/table/save"
 //批量删除
 exports.batch_del = "/api/post/table/batch/del"
+
+exports.base = "http://172.16.101.74:8080/educationtrain-web/"

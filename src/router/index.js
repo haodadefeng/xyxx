@@ -39,14 +39,17 @@ import barChartsComponent from 'pages/charts/bar'
 //基础模块
 //学校管理模块
 import schoolManagementComponent from 'pages/base/schoolsManagement'
+import addSchoolComponent from 'pages/base/schoolsManagement/addSchool'
 //年级管理模块
 import gradeManagementComponent from 'pages/base/gradeManagement'
 //教师管理模块
 import teacherManagementComponent from 'pages/base/teacherManagement'
+import addTeacherComponent from 'pages/base/teacherManagement/addTeacher'
 //学生管理模块
 import studentsManagementComponent from 'pages/base/studentsManagement'
 //教材管理模块
 import teachingMaterialManagementComponent from 'pages/base/teachingMaterialManagement'
+import addMeterialComponent from 'pages/base/teachingMaterialManagement/addMaterial'
 
 //在线练习模块
 //标签管理
@@ -155,6 +158,14 @@ const routes = [{
       auth: true
     }
   },{
+    path: '/base/schoolManagement/options',
+    name: 'addSchool',
+    component: addSchoolComponent,
+    meta: {
+      title: "添加学校",
+      auth: true
+    }
+  },{
     path: '/base/gradeManagement',
     name: 'gradeManagement',
     component: gradeManagementComponent,
@@ -171,6 +182,14 @@ const routes = [{
       auth: true
     }
   },{
+    path: '/base/teacherManagement/options',
+    name: 'addTeacher',
+    component: addTeacherComponent,
+    meta: {
+      title: "添加教师",
+      auth: true
+    }
+  },{
     path: '/base/studentsManagement',
     name: 'studentsManagement',
     component: studentsManagementComponent,
@@ -184,6 +203,14 @@ const routes = [{
     component: teachingMaterialManagementComponent,
     meta: {
       title: "教材管理",
+      auth: true
+    }
+  },{
+    path: '/base/teachingMaterialManagement/options',
+    name: 'addMeterial',
+    component: addMeterialComponent,
+    meta: {
+      title: "添加教材",
       auth: true
     }
   },{
@@ -287,7 +314,7 @@ const routes = [{
     name: 'complaint',
     component: complaintComponent,
     meta: {
-      title: "广告管理",
+      title: "投诉/评论",
       auth: true
     }
   }]
@@ -295,7 +322,7 @@ const routes = [{
 
 const router = new VueRouter({
   routes,
-  mode: 'hash', //default: hash ,history
+  mode: 'history', //default: hash ,history
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
